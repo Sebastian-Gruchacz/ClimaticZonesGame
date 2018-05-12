@@ -21,6 +21,9 @@ div.Image {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-background-size: cover; /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
+    -moz-background-size: cover; /* optional for Firefox 3.6 */ 
+    -o-background-size: cover; /* for Opera 9.5 */
 }
 
 div.TopArea {
@@ -51,16 +54,16 @@ div.CardTitle {
 div.Title {
     font-weight: bold;
     margin: 0;
-    padding: 1mm;
+    padding: 0.5mm 1mm 0.5mm 1mm;
     display: block;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 div.TypeDescription {
     margin: 0;
-    padding: 1mm;
+    padding: 0 0 0 1mm;
     display: block;
-    font-size: 90%;
+    font-size: 80%;
     font-style: italic;
 }
 div.Icon {
@@ -87,8 +90,9 @@ div.Description {
     height: 31mm;
     display: block;
     padding: 2mm;
-    font-size: 100%;
+    font-size: 95%;
     margin: 0;
+    font-family: Verdana;
 }
 
 table.CardsTable {
