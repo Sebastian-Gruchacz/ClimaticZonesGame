@@ -9,13 +9,13 @@
     public class CardsFileRenderer
     {
         private readonly LayoutParameters _parameters;
-        private readonly CardLayout _cardRenderer;
+        private readonly CardRenderer _cardRenderer;
         private string _cardsFileTemplate;
 
         public CardsFileRenderer(LayoutParameters parameters)
         {
             this._parameters = parameters;
-            this._cardRenderer = new CardLayout(parameters);
+            this._cardRenderer = new CardRenderer(parameters);
 
             this.LoadTemplates();
         }
@@ -85,7 +85,7 @@
                 sb.AppendLine("</tr>");
             }
 
-            sb.AppendLine(@"</tbody></table>");
+            sb.AppendLine(@"</tbody></table><br><br><br>");
 
             return sb.ToString();
         }

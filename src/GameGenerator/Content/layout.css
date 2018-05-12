@@ -70,7 +70,7 @@ div.Icon {
     padding: 0;
     width: 15mm;
     height: 15mm;
-    margin-left: 50mm;
+    margin-left: 49.5mm;
     margin-top: -15mm;
     display: block;
     /*border: solid black 1px;*/
@@ -80,17 +80,17 @@ div.LandIcon {
     padding: 0;
     width: 15mm;
     height: 15mm;
-    margin-left: 50mm;
+    margin-left: 0;
     margin-top: -46mm;
     display: block;
-    /*border: solid black 1px;*/
+    border: solid black 1px;
 }
 
 div.Description {
     height: 31mm;
     display: block;
     padding: 2mm;
-    font-size: 95%;
+    font-size: 85%;
     margin: 0;
     font-family: Verdana;
 }

@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class CardLayout
+    public class CardRenderer
     {
         private readonly LayoutParameters _parameters;
 
@@ -11,7 +11,7 @@
         private string _plantLayout;
 
 
-        public CardLayout(LayoutParameters parameters)
+        public CardRenderer(LayoutParameters parameters)
         {
             this._parameters = parameters;
 

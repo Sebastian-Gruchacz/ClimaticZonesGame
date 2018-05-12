@@ -17,7 +17,7 @@
                     Title = "Tundra",
                     CardType = CardType.Land,
                     ZoneSetName = ZoneName.Tundra,
-                    CardCount = 3,
+                    CardCount = 6,
                     ImageName = "Tundra.jpg",
                     Description = @"Bezleśne zbiorowisko roślinności w zimnym klimacie strefy arktycznej i subarktycznej. Latem temperatura nie przekracza 15 °C, trwa dzień polarny."
                 },
@@ -26,9 +26,28 @@
                     Title = "Chrobotek reniferowy",
                     CardType = CardType.Plant,
                     ZoneSetName = ZoneName.Tundra,
-                    CardCount = 2,
+                    CardCount = 3,
                     ImageName = "Chrobotek reniferowy.jpg",
-                    Description = @"Gatunek grzybów należący do rodziny chrobotkowatych (Cladoniaceae). Ze względu na współżycie z glonami zaliczany jest do porostów."
+                    Description = @"Gatunek grzybów należący do rodziny chrobotkowatych <i>(Cladoniaceae)</i>. Ze względu na współżycie z glonami zaliczany jest do porostów."
+                },
+
+                new CardInfo
+                {
+                    Title = "Tajga",
+                    CardType = CardType.Land,
+                    ZoneSetName = ZoneName.Tajga,
+                    CardCount = 6,
+                    ImageName = "Tajga.jpg",
+                    Description = @"Tajga, borealne lasy iglaste – lasy iglaste, które występują w północnej części Azji i Ameryki Północnej, w obrębie klimatu umiarkowanego chłodnego na półkuli północnej. Tajgę w większości porastają lasy iglaste oraz, w niewielkim stopniu, lasy liściaste"
+                },
+                new CardInfo
+                {
+                    Title = "Renifer tundrowy",
+                    CardType = CardType.Animal,
+                    ZoneSetName = ZoneName.Tajga,
+                    CardCount = 3,
+                    ImageName = "ReniferTundrowy.jpg",
+                    Description = @"Renifer tundrowy, ren, karibu (Rangifer tarandus) – gatunek ssaka z rodziny jeleniowatych <i>(Cervidae)</i>, zamieszkujący arktyczną tundrę i lasotundrę w Eurazji i Ameryce Północnej."
                 },
             };
 
