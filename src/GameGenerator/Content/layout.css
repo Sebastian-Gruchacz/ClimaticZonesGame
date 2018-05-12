@@ -82,3 +82,28 @@
         font-size: 100%;
         margin: 0;
     }
+
+    table.CardsTable {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    table.CardsTable td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    table.CardsTable tr {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    img.IconImage {
+        width: 15mm;
+        height: 15mm;
+        padding: 0;
+        margin: 0;
+    }

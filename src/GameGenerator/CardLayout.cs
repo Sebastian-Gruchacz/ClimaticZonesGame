@@ -5,6 +5,7 @@
     public class CardLayout
     {
         private readonly LayoutParameters _parameters;
+
         private string _landLayout;
         private string _animalLayout;
         private string _plantLayout;
@@ -13,7 +14,8 @@
         public CardLayout(LayoutParameters parameters)
         {
             this._parameters = parameters;
-            LoadLayouts();
+
+            this.LoadLayouts();
         }
 
         private void LoadLayouts()
@@ -25,42 +27,37 @@
 
         public string RenderCardHtmlContent(Card card)
         {
-            
-        }
-    }
+            string template = this.PickTemplate(card);
 
-    internal static class Helpers
-    {
-        public static string LoadFile(string path)
+            // TODO: use dictionary replacer
+            return template
+                .Replace("{#TITLE#}", card.Title)
+                .Replace("{#DESCRIPTION#}", card.Description)
+                .Replace("{#IMAGE_NAME#}", card.ImageName)
+                .Replace("{#ZONE_IMAGE_NAME#}", this.GetZoneImageName(card))
+                .Replace("{#CARD_TYPE_IMAGE_NAME#}", this.GetCardTypeImageName(card));
+        }
+
+        private string PickTemplate(Card card)
         {
-            throw new NotImplementedException();
+            switch (card.CardType)
+            {
+                case CardType.Land: return this._landLayout;
+                case CardType.Animal: return this._animalLayout;
+                case CardType.Plant: return this._plantLayout;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
-    }
 
-    internal class Card
-    {
-        public CardType CardType { get; set; }
-
-        public string Title { get; set; }
-
-        public string Description { get; set; }
-
-        public string ImageName { get; set; }
-
-        public int CardCount { get; set; }
-
-        public bool Validate()
+        private string GetCardTypeImageName(Card card)
         {
-            return !string.IsNullOrWhiteSpace(this.Title) &&
-                   !string.IsNullOrWhiteSpace(this.Description) &&
-                   !string.IsNullOrWhiteSpace(this.ImageName) && this.CardCount >= 0;
+            return $"{card.CardType}.jpg";
         }
-    }
 
-    internal enum CardType
-    {
-        Land,
-        Animal,
-        Plant
+        private string GetZoneImageName(Card card)
+        {
+            return $"{card.ZoneSetName}.jpg";
+        }
     }
 }

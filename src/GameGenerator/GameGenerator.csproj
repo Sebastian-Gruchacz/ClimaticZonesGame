@@ -42,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Card.cs" />
     <Compile Include="CardLayout.cs" />
+    <Compile Include="CardsFileRenderer.cs" />
+    <Compile Include="CardType.cs" />
+    <Compile Include="Helpers.cs" />
     <Compile Include="Layout.cs" />
     <Compile Include="LayoutParameters.cs" />
     <Compile Include="LayoutRecord.cs" />
@@ -57,21 +61,27 @@
     <Content Include="Content\Instruction.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Layouts\Plant.html">
+    <Content Include="Data\Layouts\AllCards.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Layouts\Animal.html">
+    <Content Include="Data\Layouts\Plant.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Layouts\Land.html">
+    <Content Include="Data\Layouts\Animal.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Layouts\layout.css">
+    <Content Include="Data\Layouts\Land.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\layout.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\Images\" />
+    <Folder Include="Content\Images\Icons\" />
+    <Folder Include="Content\Images\R\" />
+    <Folder Include="Content\Images\S\" />
+    <Folder Include="Content\Images\Z\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
