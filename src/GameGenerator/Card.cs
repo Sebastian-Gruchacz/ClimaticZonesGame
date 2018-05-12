@@ -10,17 +10,14 @@
 
         public string ImageName { get; set; }
 
-        public string ZoneSetName { get; set; }
+        public ZoneName ZoneSetName { get; set; }
 
-        public int CardCount { get; set; }
-
+       
         public bool Validate()
         {
             return !string.IsNullOrWhiteSpace(this.Title) &&
                    !string.IsNullOrWhiteSpace(this.Description) &&
-                   !string.IsNullOrWhiteSpace(this.ImageName) &&
-                   !string.IsNullOrWhiteSpace(this.ZoneSetName) && 
-                   this.CardCount >= 0;
+                   !string.IsNullOrWhiteSpace(this.ImageName);
         }
     }
 }

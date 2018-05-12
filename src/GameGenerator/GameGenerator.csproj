@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Card.cs" />
+    <Compile Include="CardInfo.cs" />
     <Compile Include="CardLayout.cs" />
     <Compile Include="CardsFileRenderer.cs" />
     <Compile Include="CardType.cs" />
@@ -58,6 +59,30 @@
     <None Include="Data\Game.ini" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Icons\Animal.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Icons\Land.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Icons\LasTropikalny.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Icons\Plant.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Icons\Pustynia.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\Icons\Tundra.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\R\Chrobotek reniferowy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\S\Tundra.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Instruction.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -78,9 +103,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\Images\Icons\" />
-    <Folder Include="Content\Images\R\" />
-    <Folder Include="Content\Images\S\" />
     <Folder Include="Content\Images\Z\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

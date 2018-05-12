@@ -1,109 +1,117 @@
-﻿    body {
-        font-family: "Tahoma";
-        font-size: 10pt;
-    }
+﻿body {
+    font-family: "Tahoma";
+    font-size: 10pt;
+}
 
-    div.Card {
-        border: solid black 1px;
-        width: 65mm;
-        height: 92mm;
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-    div.Image {
-        display: block;
-        padding: 5mm;
-    }
+div.Card {
+    border: solid black 1px;
+    width: 65mm;
+    height: 92mm;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
 
-    div.TopArea {
-        display: block;
-        padding: 0;
-        margin: 0;
-        height: 46mm;
-    }
+div.Image {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 65mm;
+    height: 46mm;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+div.TopArea {
+    display: block;
+    padding: 0;
+    margin: 0;
+    height: 46mm;
+}
 
     
-    div.Label {
-        margin: 0;
-        padding: 0;
-        display: block;
-        border: solid black 1px;
-        height: 15mm;
-    }
+div.Label {
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: solid black 1px;
+    background-color: darkgray;
+    height: 15mm;
+}
 
-    div.CardTitle {
-        margin: 0;
-        padding: 0;
-        display: block;
-        width: 50mm;
-        height: 15mm;
-    }
+div.CardTitle {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 50mm;
+    height: 15mm;
+}
 
-    div.Title {
-        font-weight: bold;
-        margin: 0;
-        padding: 1mm;
-        display: block;
-        font-size: 150%;
-    }
+div.Title {
+    font-weight: bold;
+    margin: 0;
+    padding: 1mm;
+    display: block;
+    font-size: 120%;
+}
 
-    div.TypeDescription {
-        margin: 0;
-        padding: 1mm;
-        display: block;
-        font-size: 110%;
-        font-style: italic;
-    }
-    div.Icon {
-        padding: 0;
-        width: 15mm;
-        height: 15mm;
-        margin-left: 50mm;
-        margin-top: -15mm;
-        display: block;
-        /*border: solid black 1px;*/
-    }
+div.TypeDescription {
+    margin: 0;
+    padding: 1mm;
+    display: block;
+    font-size: 90%;
+    font-style: italic;
+}
+div.Icon {
+    padding: 0;
+    width: 15mm;
+    height: 15mm;
+    margin-left: 50mm;
+    margin-top: -15mm;
+    display: block;
+    /*border: solid black 1px;*/
+}
 
-    div.LandIcon {
-        padding: 0;
-        width: 15mm;
-        height: 15mm;
-        margin-left: 50mm;
-        margin-top: -15mm;
-        display: block;
-        /*border: solid black 1px;*/
-    }
+div.LandIcon {
+    padding: 0;
+    width: 15mm;
+    height: 15mm;
+    margin-left: 50mm;
+    margin-top: -46mm;
+    display: block;
+    /*border: solid black 1px;*/
+}
 
-    div.Description {
-        height: 31mm;
-        display: block;
-        padding: 2mm;
-        font-size: 100%;
-        margin: 0;
-    }
+div.Description {
+    height: 31mm;
+    display: block;
+    padding: 2mm;
+    font-size: 100%;
+    margin: 0;
+}
 
-    table.CardsTable {
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
+table.CardsTable {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-    table.CardsTable td {
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
+table.CardsTable td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-    table.CardsTable tr {
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
+table.CardsTable tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-    img.IconImage {
-        width: 15mm;
-        height: 15mm;
-        padding: 0;
-        margin: 0;
-    }
+img.IconImage {
+    width: 15mm;
+    height: 15mm;
+    padding: 0;
+    margin: 0;
+}
