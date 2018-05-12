@@ -10,6 +10,8 @@ namespace GameGenerator
     {
         static void Main(string[] args)
         {
+            var layout = new Layout(new LayoutParameters());
+            layout.Calculations();
         }
     }
 }
