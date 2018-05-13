@@ -44,7 +44,8 @@
                 .Replace("{#IMAGE_NAME#}", card.ImageName)
                 .Replace("{#ZONE_IMAGE_NAME#}", this.GetZoneImageName(card))
                 .Replace("{#CARD_TYPE_IMAGE_NAME#}", this.GetCardTypeImageName(card))
-                .Replace("{#DESC_FONT_SIZE#}", descFontSize.ToString("F1", CultureInfo.InvariantCulture) + "mm");
+                .Replace("{#DESC_FONT_SIZE#}", descFontSize.ToString("F1", CultureInfo.InvariantCulture) + "mm")
+                .Replace("{#ICON_LOCATION#}", card.IconLocation.ToString("D"));
         }
 
         private decimal CalculateDescriptionFontSize(string text)

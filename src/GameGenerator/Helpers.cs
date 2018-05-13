@@ -1,10 +1,8 @@
 ﻿namespace GameGenerator
 {
-    using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Reflection;
-    using System.Runtime.CompilerServices;
 
     internal static class Helpers
     {
@@ -34,6 +32,17 @@
                     yield return info.ToCard();
                 }
             }
+        }
+
+        public static void WriteFileFromTemplate(StreamWriter writer, string template, IDictionary<string, string> replacements)
+        {
+            string output = template;
+            foreach (var replacement in replacements)
+            {
+                output = output.Replace($"{{#{replacement.Key}#}}", replacement.Value);
+            }
+
+            writer.Write(output);
         }
     }
 }

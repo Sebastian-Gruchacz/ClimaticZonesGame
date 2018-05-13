@@ -76,7 +76,7 @@ div.Icon {
     /*border: solid black 1px;*/
 }
 
-div.LandIcon {
+div.LandIcon-1 {
     padding: 0;
     width: 15mm;
     height: 15mm;
@@ -85,6 +85,35 @@ div.LandIcon {
     display: block;
     border: solid black 1px;
 }
+div.LandIcon-2 {
+    padding: 0;
+    width: 15mm;
+    height: 15mm;
+    margin-left: 49.5mm;
+    margin-top: -46mm;
+    display: block;
+    border: solid black 1px;
+}
+div.LandIcon-3 {
+    padding: 0;
+    width: 15mm;
+    height: 15mm;
+    margin-left: 49.5mm;
+    margin-top: -15.5mm;
+    display: block;
+    border: solid black 1px;
+}
+div.LandIcon-4 {
+    padding: 0;
+    width: 15mm;
+    height: 15mm;
+    margin-left: 0;
+    margin-top: -15.5mm;
+    display: block;
+    border: solid black 1px;
+}
+
+
 
 div.Description {
     height: 31mm;

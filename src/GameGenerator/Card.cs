@@ -12,7 +12,9 @@
 
         public ZoneName ZoneSetName { get; set; }
 
-       
+        public int IconLocation { get; set; }
+
+
         public bool Validate()
         {
             return !string.IsNullOrWhiteSpace(this.Title) &&

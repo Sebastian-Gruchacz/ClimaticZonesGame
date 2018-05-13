@@ -14,6 +14,8 @@
 
         public ZoneName ZoneSetName { get; set; }
 
+        public int IconLocation { get; set; }
+
         public Card ToCard()
         {
             return new Card
@@ -22,7 +24,8 @@
                 Title = this.Title,
                 Description = this.Description,
                 ImageName = this.ImageName,
-                ZoneSetName = this.ZoneSetName
+                ZoneSetName = this.ZoneSetName,
+                IconLocation = this.IconLocation
             };
         }
     }
