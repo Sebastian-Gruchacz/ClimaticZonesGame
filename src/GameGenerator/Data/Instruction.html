@@ -28,7 +28,7 @@
 
 <div>
     <h4>Cel rozgrywki</h4>
-    <p>W grze moze wziąć udział {#PLAYERS_NUMBER#} graczy.</p>
+    <p>W grze może wziąć udział {#PLAYERS_NUMBER#} graczy.</p>
     <p>Celem graczy jest zebranie największej ilości punktów przyznawanych za zbierane <i>trójki</i> (komplety) kart. 
         Punktowana <i>trójka</i> zawiera zwierzę i roślinę dopasowane do strefy, którą zamieszkują.</p>
 </div>
@@ -38,22 +38,23 @@
     <p>Gracze ustalają, który wariant rozgrywki wybierają oraz sposób naliczania punktacji.</p>
     <p>Wszystkie karty należy potasować i ułożyć w stos.</p>
     <p>Pierwszego gracza ustala się w sposób losowy. Może to też być gracz, który jako ostatni był w zoo.</p>
-    <p>Kolejność działań graczy, poczawszy od pierwszego gracza, przebiega zgodnie z ruchem wskazówek zegara.</p>
+    <p>Kolejność działań graczy, począwszy od pierwszego gracza, przebiega zgodnie z ruchem wskazówek zegara.</p>
     <p>Na początku wszyscy gracze dobierają po 5 kart z wierzchu stosu 
-        (w sposób dowolny - po jednej lub od razu po 5 - wszyscy gracze stosują taki sam sposób, ustalony przez rozgrywką)
-        w taki sposób by pozostali gracze ich nie widzieli. 
+        (w sposób dowolny - po jednej lub od razu po 5 - wszyscy gracze stosują taki sam sposób, ustalony przed rozgrywką)
+        w taki sposób, by pozostali gracze ich nie widzieli. 
         Z wylosowanych kart budują tzw. <i>rękę</i> - zestaw kart, które będą następnie zagrywać.</p>
-    <p>Począwszy od pierwszego gracza wszyscy wykonują swoje czynności. W danej turze gracz może wykonać następujące czynności, i tylko w podanej kolejności:</p>
+    <p>Począwszy od pierwszego gracza wszyscy wykonują swoje czynności. W danej turze gracz może wykonać następujące czynności (i <b>tylko w podanej kolejności</b>):</p>
     <p>
         <ul>
             <li><b>Odrzucenie kart</b> na <i>stos kart odrzuconych</i> (bez pokazywania ich innym graczom - zakrytych). Gracz może odrzucić od zera do wszystkich posiadanych kart.</li>
-            <li><b>Dobieranie kart</b> z <i>głównego stosu</i>. W żadnym momencie gracz nie może mieć "na ręku" wiecej niż 5 kart.</li>
-            <li><b>Kompletowanie trójek</b> z posiadych w ręku kart. Każda kompletna trójka składa się z dopasowanych STREFA-ZWIERZĘ-ROŚLINA. 
-                Skompletowane trójki gracz kładzie odkryte przed sobą na stole. Reguły dobieranie trójek i punktowania opisane są poniżej, w sekcji wariantów gry.</li>
+            <li><b>Dobieranie kart</b> z <i>głównego stosu</i> na "rękę". W żadnym momencie gracz nie może mieć "na ręku" więcej niż 5 kart.</li>
+            <li><b>Kompletowanie trójek</b> z posiadanych w ręku kart. Każda kompletna <i>trójka</i> składa się z dopasowanych (posiadających identyczny symbol strefy, umieszczony na karcie obok nazwy karty) trzech kart STREFA-ZWIERZĘ-ROŚLINA.
+                Skompletowane trójki gracz kładzie odkryte przed sobą na stole. Reguły dobierania trójek i punktowania opisane są poniżej, w sekcji wariantów gry.
+            </li>
         </ul>
     </p>
-    <p>Gracze zagrywają swoje tury aż do zakończenia rozgrywki, zgodnie z wybranym wariantem.</p>
-    <p>Następuje podliczenie punktów (również zgodnie z wybranym wariantem punktowania). Wygrywa gracz, który będzie miał ich najwięcej. Remisy można roztrzygnąć rozgrywając kolejną partię.</p>
+    <p>Gracze rozgrywają swoje tury naprzemiennie, aż do zakończenia rozgrywki, zgodnie z wybranym wariantem.</p>
+    <p>Następuje podliczenie punktów (również zgodnie z wybranym wariantem punktowania). Wygrywa gracz, który będzie miał ich najwięcej. Remisy można rozstrzygnąć rozgrywając kolejną partię.</p>
 </div>
     
 <div>
@@ -61,8 +62,8 @@
     <h5>1. Budowanie trójek</h5>
     <p>
         <ul>
-            <li>A. gracz może posiadać tylko całkowicie unikalne trójki - żadne zwierzę lub roślina nie mogą się powtórzyć w tej samej strefie.</li>
-            <li>B. gracz może posiadać częściowo unikalne trójki - może skompletować trójki, które róznią się tylko rośliną lub zwierzęciem.</li>
+            <li>A. gracz może posiadać tylko całkowicie unikalne trójki - żadne zwierzę lub roślina nie mogą się powtórzyć pośród kompletnych trójek danego gracza.</li>
+            <li>B. gracz może posiadać częściowo unikalne trójki - może skompletować trójki, które różnią się tylko rośliną lub zwierzęciem.</li>
             <li>C. gracz może posiadać identyczne trójki.</li>
         </ul>
     </p>
@@ -73,17 +74,17 @@
             <li>A. 1 punkt</li>
             <li>B. Za pierwszą trójkę z danej strefy 1 punkt, za drugą 2 punkty itd.</li>
             <li>C. Dodatkowo, za zebranie trójki ze strefy, której nie ma żaden inny gracz - 5 punktów.</li>
-            <li>D. Dodatkowo, za zebranie przynajmniej jednej trójki z każdej z {#LANDS_COUNT#} stref - 10 punktów.</li>
+            <li>D. Dodatkowo, za zebranie przynajmniej jednej trójki z każdej z {#LAND_CARDS_TYPES_COUNT#} stref - 10 punktów.</li>
         </ul>
     </p>
     <h5>3. Zakończenie rozgrywki</h5>
     <p>
         Gra kończy się gdy:
         <ul>
-            <li>A. skończą się karty w <i>stosie głównym</i> i wszyscy gracze nie mają jużna ręku odpowiednich kart, które umożliwiłyby skopletowanie poprawnych <i>trójek</i>.</li>
-            <li>B. Gracze ustalają ilość trójek (np. 5), których zebranie przez dowolnego gracza natychmiast kończy grę, najprawdopodobniej czyniac go też zwycięzcą. 
+            <li>A. skończą się karty w <i>stosie głównym</i> i wszyscy gracze nie mają już "na ręku" odpowiednich kart, które umożliwiłyby skompletowanie poprawnych <i>trójek</i>.</li>
+            <li>B. Gracze ustalają ilość trójek (np. 5), których zebranie przez dowolnego gracza natychmiast kończy grę, najprawdopodobniej czyniąc go też zwycięzcą. 
                 W tym wariancie jeśli zabraknie kart w <i>stosie głównym</i> należy potasować karty ze <i>stosu kart odrzuconych</i> i zbudować z nich nowy <i>stos główny</i>.</li>
-            <li>C. Inna wybrana kombinacja, która Wam sprawi największą frajdę i bedzie odpowiednia do liczby graczy i ilosci posiadanych kart.</li>
+            <li>C. Inna wybrana kombinacja, która Wam sprawi największą frajdę i będzie odpowiednia do liczby graczy i ilości posiadanych kart.</li>
         </ul>
     </p>
 </div>
