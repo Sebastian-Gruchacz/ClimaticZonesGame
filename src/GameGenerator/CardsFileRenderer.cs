@@ -64,7 +64,7 @@
         private string RenderOnePage(Card[] cardsOnPage)
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(@"<table class=""CardsTable""><tbody>");
+            sb.AppendLine(@"<table class=""CardsTable"" cellspacing=""0"" cellpadding=""0""><tbody>");
 
             int cardIndex = 0;
             for (int y = 0; y < this._parameters.Layout.PossibleLinesOfCards; y++)
