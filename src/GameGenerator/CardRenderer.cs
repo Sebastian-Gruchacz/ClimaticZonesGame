@@ -8,7 +8,7 @@
     public class CardRenderer
     {
         private const double INCH_MILLIMETERS = 25.4;
-        private const float GRUCHA_CONST = 4; // have no time to figure calculations correctly, but this is just enough ;-)
+        private const float GRUCHA_CONST = 3.8f; // have no time to figure calculations correctly, but this is just enough ;-)
         private readonly LayoutParameters _parameters;
 
         private string _landLayout;

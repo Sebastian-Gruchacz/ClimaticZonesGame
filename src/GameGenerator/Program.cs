@@ -75,6 +75,13 @@
             cardInfo = LoadCardsDefinitions().ToArray();
 
             var cards = Helpers.BuildCardSet(cardInfo).ToArray();
+
+            // fix for cards damaged during cut
+            /* cards = cards.Where(c => c.Title.Equals("Tajga")).Take(4)
+                .Concat(cards.Where(c => c.Title.Equals("Jodła")).Take(3))
+                    .Concat(cards.Where(c => c.Title.Equals("Modrzew")).Take(1))
+                    .ToArray(); */
+
             var renderer = new CardsFileRenderer(parameters);
 
             using (var output = new StreamWriter(@".\Content\output.html"))

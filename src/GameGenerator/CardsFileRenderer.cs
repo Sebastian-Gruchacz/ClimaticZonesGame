@@ -85,7 +85,7 @@
                 sb.AppendLine("</tr>");
             }
 
-            sb.AppendLine(@"</tbody></table><br><br><br>");
+            sb.AppendLine(@"</tbody></table><br><br>");
 
             return sb.ToString();
         }
